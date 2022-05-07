@@ -4,11 +4,11 @@ import 'firebase/firestore';
 import 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAaSyK7W0_UWeDMTKiwTVcjTGZgX2qRkP8',
-  authDomain: 'music-c2596.firebaseapp.com',
-  projectId: 'music-c2596',
-  storageBucket: 'music-c2596.appspot.com',
-  appId: '1:417422649545:web:7439d0a2f274a0585ac518',
+  apiKey: "AIzaSyB5KQEOjKzij8XUXKcNkbuEayEXqZL9ZVA",
+  authDomain: "virtual-meetings-274116.firebaseapp.com",
+  projectId: "virtual-meetings-274116",
+  storageBucket: "virtual-meetings-274116.appspot.com",
+  appId: "1:934658742837:web:c671af4711a81210582f7c",
 };
 
 // Initialize Firebase
