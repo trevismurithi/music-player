@@ -5,7 +5,7 @@
       <!-- App Name -->
       <router-link class="text-white font-bold uppercase text-2xl mr-4"
         :to="{ name: 'home' }" exact-active-class="no-active">
-        Music
+        {{$t('header.music')}}
       </router-link>
 
       <div class="flex flex-grow items-center">
@@ -14,7 +14,7 @@
           <!-- Navigation Links -->
           <li>
             <router-link class="px-2 text-white" :to="{ name: 'about' }">
-              About
+              {{$t('header.about')}}
             </router-link>
           </li>
           <li v-if="!userLoggedIn">
@@ -25,14 +25,21 @@
           <template v-else>
             <li>
               <router-link class="px-2 text-white" :to="{ name: 'manage' }">
-                Manage
+                {{$t('header.manage')}}
               </router-link>
             </li>
             <li>
               <a class="px-2 text-white" href="#"
-                @click.prevent="signout">Logout</a>
+                @click.prevent="signout">{{$t('header.logout')}}</a>
             </li>
           </template>
+        </ul>
+        <ul class="flex flex-row mt-1 ml-auto">
+          <li>
+            <a class="px-2 text-white" href="#" @click.prevent="changeLocale">
+              {{currentLocale}}
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -46,6 +53,9 @@ export default {
   name: 'Header',
   computed: {
     ...mapState(['userLoggedIn']),
+    currentLocale() {
+      return this.$i18n.locale === 'fr' ? 'French' : 'English';
+    },
   },
   methods: {
     ...mapMutations(['toggleAuthModal']),
@@ -63,6 +73,9 @@ export default {
     // toggleAuthModal() {
     //   this.$store.commit('toggleAuthModal');
     // },
+    changeLocale() {
+      this.$i18n.locale = this.$i18n.locale === 'fr' ? 'en' : 'fr';
+    },
   },
 };
 </script>

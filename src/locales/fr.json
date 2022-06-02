@@ -1,0 +1,20 @@
+{
+  "header": {
+    "about": " À propos de",
+    "log_register": "S'identifier / S'enregistrer",
+    "logout": " Se déconnecter",
+    "manage": "Faire en sorte",
+    "music": "MUSIQUE"
+  },
+  "home": {
+    "listen": " Écoutez de la bonne musique !",
+    "listen_content": "\"La musique est le langage universel de l'humanité.\" \"Où les mots échouent la musique parle.\" \"La vie est comme une belle mélodie, seules les paroles sont foirées.\" « La musique est le langage de l'esprit."
+  },
+  "register": {
+    "TOS": "",
+    "accept": ""
+  },
+  "song": {
+    "comments": "{count} comments"
+  }
+}

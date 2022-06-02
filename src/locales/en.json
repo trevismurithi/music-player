@@ -1,0 +1,20 @@
+{
+  "header": {
+    "about": "About",
+    "log_register": "Login / Register",
+    "logout": "Logout",
+    "manage": "Manage",
+    "music": "MUSIC"
+  },
+  "home": {
+    "listen": "Listen to Great Music!",
+    "listen_content": "“Music is the universal language of mankind.” “Where words fail, music speaks.” “Life is like a beautiful melody, only the lyrics are messed up.” “Music is the language of the spirit."
+  },
+  "register": {
+    "TOS": "terms of service",
+    "accept": "I accept the {0}"
+  },
+  "song": {
+    "comments": "No comments|1 comment|{count} comments"
+  }
+}
