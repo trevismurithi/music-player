@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
+import Song from '@/views/Song.vue';
 import Manage from '@/views/Manage.vue';
 import store from '@/store';
 
@@ -16,6 +17,11 @@ const routes = [
     component: About,
   },
   {
+    name: 'song',
+    path: '/song/:id',
+    component: Song,
+  },
+  {
     name: 'manage',
     // alias: '/manage',
     path: '/manage-music',
@@ -24,7 +30,6 @@ const routes = [
     },
     component: Manage,
     beforeEnter: (to, from, next) => {
-      console.log('Manage Route Guard');
       next();
     },
   },
